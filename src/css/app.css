@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+:root {
+  --primary-color: #3a6084;
+  --secondary-color: #f4f5fa;
+  --danger-color: #e3342f;
+  --background-color: #f8fafc;
+  --text-color: #343a40;
+  --warning-color: #eaa749;
+  --base-font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  text-decoration: none;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--secondary-color);
+  font-family: "Battambang", system-ui, sans-serif;
+  display: flex;
+  justify-content: right;
+}
+
+.side-bar {
+  width: 7cm;
+  height: 100vh;
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Block Logo of App */
+.side-bar > .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--base-font-size);
+  color: var(--warning-color);
+  font-weight: 600;
+  line-height: 2;
+  padding: 1.5rem;
+  gap: 5px;
+}
+.side-bar > .logo > img {
+  width: 1.5cm;
+}
+
+/* End Block Logo of App */
+
+/* Block Menu */
+.side-bar > .menu-items {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 5px;
+  padding-right: 1.5rem;
+}
+
+/* Style for the sidebar menu links */
+.side-bar > .menu-items > li > a {
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: background-color 0.3s ease-in-out;
+  
+}
+
+/* Hover effect for the sidebar menu links */
+.side-bar > .menu-items > li > a:hover {
+  background-color: rgba(247, 249, 249, 0.2);
+}
+
+/* Style for SVG icons within the sidebar menu links */
+.side-bar > .menu-items > li > a > svg {
+  width: 24px;
+  height: 24px;
+  color: var(--warning-color);
+}
+
+/* Style for active menu items */
+#active-menu {
+  background-color: rgba(247, 249, 249, 0.1);
+}
+
+/* Block navbar */
+.main {
+  width: 80%;
+ 
+}
+.nav-bar {
+  width: 100%;
+  height: 4rem;
+  
+}
+
+
+.roboto-flex{
+    font-family: "Roboto Flex", sans-serif;
+}
